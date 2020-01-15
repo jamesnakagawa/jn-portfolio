@@ -26,7 +26,7 @@ const App: React.FC = () => {
             <Menu categories={[
               {url: "/", name: "Home"},
               {url: "/portfolio", name: "Graphic Design"},
-              {url: "/interface-kive", name: "Sample Interface"}
+              {url: "/interface-kive", name: "Project Study: Kive Multi-Run"}
               /*{url: "/cv", name: "CV"},
               {url: "/contact", name: "Contact"}*/
             ]}/>
