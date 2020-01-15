@@ -26,7 +26,7 @@ const App: React.FC = () => {
             <Menu categories={[
               {url: "/", name: "Home"},
               {url: "/portfolio", name: "Graphic Design"},
-              {url: "/interface/kive", name: "Sample Interface"}
+              {url: "/interface-kive", name: "Sample Interface"}
               /*{url: "/cv", name: "CV"},
               {url: "/contact", name: "Contact"}*/
             ]}/>
@@ -57,7 +57,7 @@ const App: React.FC = () => {
             <Route path="/portfolio" exact>
               <Portfolio/>
             </Route>
-            <Route path="/interface/kive" exact>
+            <Route path="/interface-kive" exact>
               <KiveMultiRun/>
             </Route>
           </Switch>
