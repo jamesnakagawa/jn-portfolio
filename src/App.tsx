@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Menu} from './Menu';
 import {Portfolio} from './Portfolio';
+import {KiveMultiRun} from "./KiveMultiRun"
 import {Link} from 'react-router-dom';
 import './App.sass';
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
             <Menu categories={[
               {url: "/", name: "Home"},
               {url: "/portfolio", name: "Graphic Design"},
+              {url: "/interface/kive", name: "Sample Interface"}
               /*{url: "/cv", name: "CV"},
               {url: "/contact", name: "Contact"}*/
             ]}/>
@@ -39,7 +41,7 @@ const App: React.FC = () => {
 
               <p>Hi, I'm James. I'm a software developer from Vancouver, BC.</p>
 
-              <p>Using my background in graphic design, I research, design, build, and manage UX features within <abbr title="Single-Page Architecture">SPA</abbr> applications built on React. I have extensive experience in writing JavaScript/TypeScript applications and building web applications</p>
+              <p>Using my background in graphic design, I research, design, build, and manage UX features within <abbr title="Single-Page Architecture">SPA</abbr> applications built on React. I have extensive experience in writing JavaScript/TypeScript applications and building web applications in a highly technical domain.</p>
 
               <p>During my 3 years as part of the BC-CfE lab I have had the opportunity to broaden my skills to include Rails, Oracle, and Docker.</p>
 
@@ -54,6 +56,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/portfolio" exact>
               <Portfolio/>
+            </Route>
+            <Route path="/interface/kive" exact>
+              <KiveMultiRun/>
             </Route>
           </Switch>
         </div>
