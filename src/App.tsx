@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 import './App.sass';
 
 const App: React.FC = () => {
+  return <span>nothing here for now!</span>;
   const [showMenu, setShowMenu] = useState(true);
   const pageTitle = "James Nakagawa";
   const easterEggGlyph = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAFCA" +
